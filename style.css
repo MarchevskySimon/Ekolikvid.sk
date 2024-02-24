@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* #b51311 */
+
+body {
+  background-color: #dcdcdc;
+  /* overflow-y: hidden; */
+}
+
+.darker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*
+ * NAV
+ */
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e0e0e0;
+  border-bottom: 5px solid #b51311;
+  box-shadow: 2px 2px 2px 5px rgba(15, 15, 15, 0.5);
+  z-index: 100;
+}
+nav ul {
+  width: 80%;
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+nav li a {
+  font-weight: 700;
+  color: black;
+  transition: 0.2s;
+}
+nav li a:hover {
+  color: #b51311;
+}
+nav li a img {
+  width: 2.5rem;
+  background-color: #b51311;
+  border: 10px solid #b51311;
+  transition: 0.2s;
+}
+/* nav li a img:hover {
+  transform: scale(1.1);
+} */
+/*
+ * HEADER
+ */
+
+header {
+  position: relative;
+  width: 100%;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url("img/junkyard.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header img {
+  width: 25rem;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+header p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  background-color: #b51311;
+  padding: 1rem 2rem;
+  box-shadow: 10px 8px 2px 0px rgba(15, 15, 15, 0.5);
+  z-index: 1;
+}
+/*
+ * SECTION
+ */
+section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border: 0.5rem solid #b51311;
+}
+.title {
+  flex: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+.title h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  width: 80%;
+  margin: 0 10%;
+  color: #e0e0e0;
+  background-color: #b51311;
+  box-shadow: 10px 8px 2px 0px rgba(15, 15, 15, 0.5);
+}
+.text {
+  flex: 1;
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+.text p {
+  line-height: 200%;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+/*
+ * FOOTER
+ */
+
+footer {
+  position: relative;
+  width: 100%;
+  /* height: 50vh; */
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: #b51311;
+}
+
+.footer-title {
+}
+.footer-title h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  width: 50%;
+  margin: 0 25%;
+  text-align: center;
+  color: #b51311;
+  background-color: #e0e0e0;
+  box-shadow: 10px 8px 2px 0px rgba(15, 15, 15, 0.5);
+}
+
+/* COPIRIGHT */
+.copiright {
+  background-color: #840f0d;
+  padding: 1rem 0;
+  text-align: center;
+}
+.copiright i {
+  font-weight: 200;
+  color: #e0e0e0;
+}
+
+/*
+ * MEDIA Q.
+ */
