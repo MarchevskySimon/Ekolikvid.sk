@@ -127,10 +127,48 @@ section {
   flex-grow: 1;
   padding: 2rem 0;
 }
+.text a {
+  font-weight: 700;
+  color: #b51311;
+}
 .text p {
   line-height: 200%;
   margin-bottom: 2rem;
   padding: 0 1rem;
+}
+/*
+ * Vrakac link
+ */
+
+.vrakac_link {
+  position: relative;
+  padding: 4rem 0;
+  border-top: 0;
+  flex-direction: column;
+  background-image: url("img/vrakac.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.vrakac_link h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  z-index: 1;
+}
+.vrakac_link a {
+  font-size: 1.2rem;
+  /* font-weight: 500; */
+  padding: 1rem 2rem;
+  color: #e0e0e0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid #b51311;
+  box-shadow: 10px 8px 2px 0px rgba(15, 15, 15, 0.5);
+  transition: 0.2s;
+  z-index: 1;
+}
+.vrakac_link a:hover {
+  background-color: #b51311;
 }
 
 /*
@@ -148,8 +186,8 @@ footer {
   background-color: #b51311;
 }
 
-.footer-title {
-}
+/* .footer-title {
+} */
 .footer-title h1 {
   font-size: 5rem;
   font-weight: 900;
