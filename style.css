@@ -150,17 +150,14 @@ section {
   border-right: 0.5rem solid #b51311;
 }
 .download h1 {
-  text-align: center;
   font-size: 4rem;
   font-weight: 900;
   width: 50%;
   margin-bottom: 2rem;
   color: #e0e0e0;
+  text-align: center;
   background-color: #b51311;
   box-shadow: 10px 8px 2px 0px rgba(15, 15, 15, 0.5);
-}
-.download li {
-  margin-top: 3rem;
 }
 .download a {
   color: #000;
@@ -168,7 +165,6 @@ section {
   margin: 1rem 0 1rem 0;
   padding: 2rem;
   background-color: #d2d2d2;
-  /* border: 1px solid #b51311; */
   transition: 0.2s;
 }
 .download a span {
