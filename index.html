@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EKOLIKVID s.r.o.</title>
 
+    <!-- IMG in TITLE -->
+    <link rel="icon" href="img/Vector.svg" type="image/icon type" />
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,14 +16,39 @@
       rel="stylesheet"
     />
 
-    <!-- SASS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- NAV -->
+      <!-- NAV RESPONSIVE -->
+      <nav class="nav-responsive">
+        <img
+          src="img/burger-menu.svg"
+          alt="menu-link"
+          id="responsive-burger"
+          class="burger"
+        />
+        <ul id="responsive-ul">
+          <li>
+            <a href="">
+              <img src="img/Vector.svg" alt="nav-logo.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#aboutUs">O NÁS</a>
+          </li>
+          <li>
+            <a href="#download">NA STIAHNUTIE</a>
+          </li>
+          <li>
+            <a href="#contact">KONTAKT</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAV NORMAL -->
 
-      <nav>
+      <nav class="nav-normal">
         <ul>
           <li>
             <a href="">
@@ -28,9 +56,9 @@
             </a>
           </li>
           <li>
-            <a href="">O NÁS</a>
+            <a href="#aboutUs">O NÁS</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="">VÝKUP</a>
           </li>
           <li>
@@ -38,12 +66,12 @@
           </li>
           <li>
             <a href="">POBOČKY</a>
+          </li> -->
+          <li>
+            <a href="#download">NA STIAHNUTIE</a>
           </li>
           <li>
-            <a href="">DOKUMENTY</a>
-          </li>
-          <li>
-            <a href="">KONTAKT</a>
+            <a href="#contact">KONTAKT</a>
           </li>
         </ul>
       </nav>
@@ -58,7 +86,7 @@
       </header>
 
       <!-- SECTION -->
-      <section>
+      <section id="aboutUs" class="about_us">
         <div class="title">
           <h1>O NÁS</h1>
         </div>
@@ -95,12 +123,12 @@
       <section class="vrakac_link">
         <span class="darker"></span>
         <h1>STRÁNKA PRE EKOLOGICKÚ LIKVIDÁCIU VOZIDIEL</h1>
-        <a href="http://vrakac.sk/">Vrakac.sk</a>
+        <a href="http://vrakac.sk/">VRAKAC.sk</a>
       </section>
 
       <!-- NA STIAHNUTIE -->
 
-      <div class="download">
+      <div id="download" class="download">
         <h1>NA STIAHNUTIE</h1>
         <a
           href="download/Povolenie-na-prevadzku-zariadenia-na-zber-odpadov-13Mar2024-10-45AM.pdf"
@@ -123,9 +151,84 @@
 
       <!-- FOOTER -->
 
-      <footer>
-        <div class="footer-title">
-          <h1>KONTAKT</h1>
+      <footer id="contact">
+        <h1>KONTAKT</h1>
+        <div class="footer-text">
+          <div class="footer-contact">
+            <p>EKOLIKVID s.r.o</p>
+          </div>
+          <div class="footer-contact">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                  stroke="#b51311"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            <p>info@ekolikvid.sk</p>
+          </div>
+          <div class="footer-contact">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                  stroke="#b51311"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            <p>Tel: 052/432 63 65</p>
+          </div>
+          <div class="footer-contact">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M12 18H12.01M9.2 21H14.8C15.9201 21 16.4802 21 16.908 20.782C17.2843 20.5903 17.5903 20.2843 17.782 19.908C18 19.4802 18 18.9201 18 17.8V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.07989 6 6.2V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z"
+                  stroke="#b51311"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            <p>Mobil: +421 905 855 322</p>
+          </div>
         </div>
       </footer>
 
@@ -136,5 +239,8 @@
       </div>
     </div>
     <!-- Header IMG - Image by mostafa meraji from Pixabay -->
+
+    <!-- JS SCRIPT -->
+    <script src="script.js"></script>
   </body>
 </html>
